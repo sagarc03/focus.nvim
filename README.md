@@ -62,6 +62,13 @@ focus.height = 40
 
 ```
 
+**Set Focus Filetype Exclusions**
+```lua
+local focus = require('focus')
+-- Set which filetypes focus will not resize
+focus.excluded_filetypes = {'NerdTree', 'CHADTree', 'NvimTree'}
+```
+
 **Set Focus Auto Cursorline**
 ```lua
 local focus = require('focus')

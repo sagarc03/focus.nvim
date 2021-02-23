@@ -3,12 +3,12 @@ local DEFAULT_HEIGHT = 0
 
 local defaults = {
     enable = true,
-    height_compatible = false,
     width = DEFAULT_WIDTH,
     height = DEFAULT_HEIGHT,
     cursorline = true,
     signcolumn = true,
     winhighlight = false,
+    excluded_filetypes = {'NvimTree','NerdTree','CHADTree'}
 }
 
 local function verify()
