@@ -8,7 +8,7 @@ local defaults = {
     cursorline = true,
     signcolumn = true,
     winhighlight = false,
-    excluded_filetypes = {'NvimTree','NerdTree','CHADTree'}
+    excluded_filetypes = {'NvimTree','NerdTree','CHADTree', 'java'}
 }
 
 local function verify()
