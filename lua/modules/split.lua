@@ -58,7 +58,7 @@ function M.split_command(direction)
 			cmd("wincmd s")
 		end
 		cmd("wincmd " .. direction)
-		-- cmd("enew")
+		cmd("enew")
 	end
 end
 
