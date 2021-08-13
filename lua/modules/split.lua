@@ -52,13 +52,13 @@ function M.split_command(direction)
 	local winnr = vim.api.nvim_get_current_win()
 	cmd("wincmd " .. direction)
 	if winnr == vim.api.nvim_get_current_win() then
-		if direction == "left" or "right" then
+		if direction == "h" or direction == "l" then
 			cmd("wincmd v")
-		else
+            elseif direction == "j" or direction == "k" then
 			cmd("wincmd s")
 		end
 		cmd("wincmd " .. direction)
-		cmd("enew")
+		-- cmd("enew")
 	end
 end
 
